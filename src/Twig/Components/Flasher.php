@@ -20,6 +20,6 @@ final class Flasher
 	{
 		$flasher->success("Flash message depuis Live Component Flasher.php");
 		$json = $flasher->render('json');
-		$this->dispatchBrowserEvent('younes:flash', $json);
+		$this->dispatchBrowserEvent('flasher:render', $json);
 	}
 }
